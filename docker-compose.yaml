@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+  mongodb:
+    image: "mongo:4.0.4"
+    ports:
+     - "27017-27019:27017-27019"

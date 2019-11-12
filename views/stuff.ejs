@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+  <meta charset="utf-8">
+  <title>Simple Web App!</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div id="top-part">
+            <h1>Page O' Stuff</h1>
+            <p>Let's look at some stuffs</p>
+            <table id="stuff_table" align="center">
+                <tr>
+                    <th>Name</th>
+                    <th>Fact</th>
+                </tr>
+                <% data.forEach( (item, index) => { %>
+                    <tr>
+                        <td><%= item.name %></td>
+                        <td><%= item.coolio_factio %></td>
+                    </tr>
+                <% }); %>
+            </table>
+        </div>
+    </header>
+</body>
+
+</html>
